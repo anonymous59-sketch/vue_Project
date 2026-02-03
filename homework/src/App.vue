@@ -10,8 +10,11 @@
   <p>
     <RouterLink to = "/route">Router Test</RouterLink>
   </p>
+  <p>
+    <RouterLink to = "/memo">memo</RouterLink>
+  </p>
   
-  <RouterView></RouterView>
+  <RouterView />
 </template>
 
 <style></style>

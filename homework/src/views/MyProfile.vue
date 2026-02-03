@@ -1,6 +1,5 @@
 <script setup>
 import { ref, computed } from 'vue'
-
 /*
   사용할 데이터 참고
   프로필 이미지 : https://picsum.photos/200
@@ -10,8 +9,6 @@ const imgUrl = ref("https://picsum.photos/200");
 const officialUrl = ref("https://ko.vuejs.org/tutorial/#step-1");
 const name = ref("홍 길동");
 const info = ref("반갑습니다! Vue.js 1일차 학습 중입니다.");
-
-
 </script>
 
 <template>

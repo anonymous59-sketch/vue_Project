@@ -14,6 +14,11 @@ const router = createRouter({
       name: "homework",
       component: () => import("../views/MyProfile.vue"),
     },
+    {
+      path: "/memo",
+      name: "memoHomework",
+      component: () => import("../views/NotePad.vue"),
+    },
   ],
 })
 

@@ -19,6 +19,21 @@ const router = createRouter({
       name: 'directiveBind',
       component: () => import('../views/DirectiveBind.vue'),
     },
+    {
+      path: '/bindModel',
+      name: 'directiveModel',
+      component: () => import('../views/DirectiveModel.vue'),
+    },
+    {
+      path: '/on',
+      name: 'eventOn',
+      component: () => import('../views/DirectiveOn.vue'),
+    },
+    {
+      path: '/for',
+      name: 'for',
+      component: () => import('../views/DirectiveFor.vue'),
+    },
   ],
 })
 
