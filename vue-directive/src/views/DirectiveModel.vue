@@ -52,7 +52,7 @@ const num = ref(0);
   <label for="linux">
     <input type="checkbox" id="linux" v-model="selectOS" value="3">Linux
   </label>
-  <p>{{ selectOS }}</p>
+  <p>{{ selectOS }}</p> <!-- 배열형태 -->
   <!-- 라디오 타입 -->
   <label for="mac1">
     <input type="radio" id="mac1" v-model="choiceOS" value="1">macOS

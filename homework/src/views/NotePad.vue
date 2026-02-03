@@ -11,13 +11,20 @@ import { ref } from "vue";
 
 const memoContent = ref('');
 const memoAry = ref(["예약하기", "자료조사"]);
+
 function insertMemo() {
+  if(!memoContent.value) {
+    alert(`값을 입력해주세요`);
+    document.querySelector('input').focus();
+    return;
+  }
   memoAry.value.push(memoContent.value);
   memoContent.value = '';
-}
+};
 
 function deleteMemo(delno) {
-  memoAry.value.splice(delno, 0, '');
+  memoAry.value.splice(delno, 1);
+  document.querySelector('input').focus();
 }
 
 </script>
@@ -27,7 +34,7 @@ function deleteMemo(delno) {
     <h1>My Simple Memo</h1>
 
     <div class="input-container">
-      <input placeholder="메모를 입력하세요" v-model="memoContent" />
+      <input placeholder="메모를 입력하세요" v-model="memoContent" @keyup.enter="insertMemo"/>
 
       <button @click="insertMemo">등록</button>
     </div>
@@ -35,7 +42,7 @@ function deleteMemo(delno) {
     <ul class="memo-list">
       <li v-for="(memo, index) in memoAry">
         <!-- <span>메모 내용이 여기에 나옵니다</span> -->
-         {{ memo }}
+        <span>{{ memo }}</span> 
         <button class="del-btn" @click="deleteMemo(index)">삭제</button>
       </li>
     </ul>
