@@ -1,6 +1,6 @@
 <script setup>
 // 자식 컴포넌트는 <template> 안에서 태그로 인식됨
-import OneSection from "@/components/OneSection.vue";
+import OneSection from "../components/OneSection.vue";
 </script>
 <template>
   <h1>컴포넌트 기초</h1>
