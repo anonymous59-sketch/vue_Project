@@ -18,12 +18,12 @@
     </nav>
   </header>
 
-  <main class="app-content">
+  <div class="app-content">
     <h1 class="page-title">{{ today }}</h1>
     <div class="view-container">
       <RouterView />
     </div>
-  </main>
+  </div>
 </template>
 
 <style scoped>

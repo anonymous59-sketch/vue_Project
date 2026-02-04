@@ -22,8 +22,8 @@ function insertMemo() {
   memoContent.value = '';
 };
 
-function deleteMemo(delno) {
-  memoAry.value.splice(delno, 1);
+function deleteMemo(delIdx) {
+  memoAry.value.splice(delIdx, 1);
   document.querySelector('input').focus();
 }
 
@@ -42,7 +42,7 @@ function deleteMemo(delno) {
     <ul class="memo-list">
       <li v-for="(memo, index) in memoAry">
         <!-- <span>메모 내용이 여기에 나옵니다</span> -->
-        <span>{{ memo }}</span> 
+        <span v-text="memo"></span> 
         <button class="del-btn" @click="deleteMemo(index)">삭제</button>
       </li>
     </ul>

@@ -26,13 +26,28 @@ const router = createRouter({
     },
     {
       path: '/on',
-      name: 'eventOn',
+      name: 'directiveEventOn',
       component: () => import('../views/DirectiveOn.vue'),
     },
     {
       path: '/for',
-      name: 'for',
+      name: 'directiveFor',
       component: () => import('../views/DirectiveFor.vue'),
+    },
+    {
+      path: '/forObj',
+      name: 'directiveForObj',
+      component: () => import('../views/DirectiveForObj.vue'),
+    },
+    {
+      path: '/if',
+      name: 'directiveIf',
+      component: () => import('../views/DirectiveIf.vue'),
+    },
+    {
+      path: '/todo',
+      name: 'directiveTodo',
+      component: () => import('../views/TodoDirective.vue'),
     },
   ],
 })
