@@ -15,6 +15,7 @@ const fourVal = ref("네번째");
       <h4>현재의 컴포넌트</h4>
       <p>{{ oneVal }}</p>
       <input type="text" v-model="oneVal" />
+      <button type="button">클릭</button>
     </section>
   </section>
 
@@ -25,16 +26,19 @@ const fourVal = ref("네번째");
       <h4>현재의 컴포넌트</h4>
       <p>{{ twoVal }}</p>
       <input type="text" v-model="twoVal" />
+      <button type="button">클릭</button>
     </section>
     <section class="box">
       <h4>현재의 컴포넌트</h4>
       <p>{{ threeVal }}</p>
       <input type="text" v-model="threeVal" />
+      <button type="button">클릭</button>
     </section>
     <section class="box">
       <h4>현재의 컴포넌트</h4>
       <p>{{ fourVal }}</p>
       <input type="text" v-model="fourVal" />
+      <button type="button">클릭</button>
     </section>
   </section>
 </template>
